@@ -1,2 +1,18 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<h1>D3</h1>
+
+<script type="text/javascript">
+	var dataset = [ 5, 10, 15, 20, 25 ];
+    d3.select("body").selectAll("p")
+	    .data(dataset)
+	    .enter()
+	    .append("div")
+	    .text(function(d){return d;})
+	    .attr('class', 'bar')
+	    .style('background-color', function(d) {
+	    	// random color
+			return '#'+Math.floor(Math.random()*16777215).toString(16);
+	    })
+	    .style('height', function(d) {
+	    	return d*5 + 'px';
+	    });
+</script>

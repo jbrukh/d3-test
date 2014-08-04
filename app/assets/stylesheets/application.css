@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+div.bar {
+    display: inline-block;
+    width: 20px;
+    height: 75px;   /* We'll override this later */
+    background-color: teal;
+    padding: 10px;
+}
